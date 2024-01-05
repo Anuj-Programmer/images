@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <!-- CSS file linked -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- fontawsome Cdn linked -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+<!-- Main card start -->
+
+    <div class="main-card">
+        <div class="search-bar">
+            <input type="text" placeholder="Enter a Location">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="flexbox">
+            <div class=namenimg>
+                <h1 id="place"></h1>
+                <p style="color: white;" id="liveTime"></p>
+                <img class="weather-image" src="images/images/clear.png" alt="Humidity Icon">
+            </div>
+            <div id="main-temp">
+                <h1 id="maintem"></h1>
+                <p id = 'weather'>Mist</p>
+            </div>
+            
+        </div>
+        <hr>
+        <!--  -->
+        <div id="days-container">
+            <div class="day-card">
+                <span class="weather-icon"><i class="fas fa-water"></i></span>
+                <div class="day-temp humid"></div>
+                <div class="card-text">Humidity</div>
+            </div>
+            <div class="day-card">
+                <span class="weather-icon"><i class="fa-brands fa-cloudscale"></i></span>
+                <div class="day-temp pressure"></div>
+                <div class="card-text">Pressure</div>
+            </div>
+            <div class="day-card">
+                <span class="weather-icon"><i class="fas fa-wind"></i></span>
+                <div class="day-temp windspeed"></div>
+                <div class="card-text">Wind Speed</div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main card ends -->
+    <footer>
+        <p>&copy; 2023 Anuj Pradhan_2408570. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
