@@ -1,0 +1,271 @@
+<!-- Name: Anuj Prasad Pradhan_2408570 -->
+<!-- ID: 2408570 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Weather Forecast</title>
+    <!-- Preconnect and link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="Anuj_Prasad_Pradhan_2408570_css.css">
+    <!-- Link to Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Main card start -->
+
+    <div class="main-card">
+        <!-- Search bar with input and button -->
+        <div class="search-bar">
+            <input type="text" placeholder="Enter a Location">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Flexbox for layout -->
+        <div class="flexbox">
+            <!-- Container for name, image, and live time -->
+            <div class=namenimg>
+                <img class="weather-image" src="" alt="Offline">
+                <h1 id="place"></h1>
+                <p style="color: white;" id="liveTime"></p>
+            </div>
+            <!-- Container for main temperature and weather description -->
+            <div id="main-temp">
+                <h1 id="maintem"></h1>
+                <p id='weather'>Mist</p>
+            </div>
+            <!-- Container for additional weather information -->
+            <div id="days-container">
+                <!-- Day card for Humidity -->
+                <div class="day-card">
+                    <span class="weather-icon"><i class="fas fa-water"></i></span>
+                    <div class="day-temp humid"></div>
+                    <div class="card-text">Humidity</div>
+                </div>
+                <!-- Day card for Pressure -->
+                <div class="day-card">
+                    <span class="weather-icon"><i class="fa-brands fa-cloudscale"></i></span>
+                    <div class="day-temp pressure"></div>
+                    <div class="card-text">Pressure</div>
+                </div>
+                <!-- Day card for Wind Speed -->
+                <div class="day-card">
+                    <span class="weather-icon"><i class="fas fa-wind"></i></span>
+                    <div class="day-temp windspeed"></div>
+                    <div class="card-text">Wind Speed</div>
+                </div>
+            </div>
+        </div>
+        <!-- Horizontal line -->
+        <hr class="mainhr">
+        <!-- Container for seven-day forecast -->
+        <div class="sevencontainer">
+            <!-- Box for the first day of the forecast -->
+            <div class="sevenbox" id="Sun">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Sun</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenbox" id="Mon">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Mon</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenbox" id="Tue">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Tue</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenbox" id="Wed">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Wed</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenbox" id="Thu">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Thu</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenbox" id="Fri">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Fri</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sevenbox" id="Sat">
+                <div class="info">
+                    <div class="sevenicon">
+                    <img src="" alt="" class="sevenimg">
+                </div>
+                    <h2 class="sevendays">Sat</h2>
+                    <h2 class="seventemp"></h2>
+                </div>
+
+                <div class="seven-card-box">
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fa-brands fa-cloudscale"></i></span>
+                        <div class="day-temp-seven spressure"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-water"></i></span>
+                        <div class="day-temp-seven shumid"></div>
+                    </div>
+                    <hr>
+                    <div class="seven-card">
+                        <span class="weather-icon-seven"><i class="fas fa-wind"></i></span>
+                        <div class="day-temp-seven swindspeed"></div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Anuj Pradhan_2408570. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript file linked -->
+    <script src="Anuj_Prasad_Pradhan_2408570_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: auto;
+    /* display: flex; */
+    /* flex-direction: column; Ensure a column layout */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://github.com/Anuj-Programmer/images/raw/main/images/SL-112421-46970-25.jpg);
+    background-size: cover;
+    height: auto;
+}
+
+
+/* Search bar starts */
+.search-bar {
+   
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    position: relative;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 40%;
+}
+
+::placeholder{
+    color: white;
+}
+
+.search-bar button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 67%;
+    /* right: 0px; */
+}
+/* Search bar ends */
+
+/* Main card starts */ 
+.main-card {
+    background: rgba(255, 255, 255, 0.1);
+   border-radius: 30px;
+    border: #fff solid 1px;
+    backdrop-filter: blur(10px);
+    padding-top: 20px;
+    text-align: center;
+    width: 60%; /* Adjust the width as needed */
+    margin: 10px auto;
+    /* margin-bottom: 2rem; */
+    position: relative;
+    color: white;
+    
+}
+
+.main-card h1{
+    color: white;
+
+    font-size: 45px;
+}
+
+.weather-icon {
+    font-size: 26px;
+    color: white;
+}
+
+/* Main temperature */
+#main-temp {
+    font-size: 56px;
+    font-weight: 200;
+    color: white;
+    margin-top: 4%;
+    position: relative;
+    width: 33%;
+}
+
+#weather{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Container for pressure humidity windspeed */
+#days-container {
+    margin-top: 20px;
+    width: 33%;
+}
+
+.day-card {
+    /* background: rgba(255, 255, 255, 0.7); */
+    /* border-radius: 20px; */
+    padding: 8px;
+    text-align: center;
+    margin: 0 20px;
+    transition: transform 0.2s;
+}
+
+.day-card:hover{
+    transform: scale(1.05); 
+}
+
+.day-temp {
+    font-size: 18px;
+    color: white;
+}
+
+h1{
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.mainicon{
+    font-size: 100px;
+    color: yellow;
+}
+
+.card-text{
+    color: white;
+    font-size: 12px;
+}
+
+/* Main weather image */
+.weather-image {
+    width: 8rem; /* Adjust the width as needed */
+    margin-bottom: 0px;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+}
+
+#maintem{
+    font-size: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /* font-size: 50px; */
+}
+/* Main card ends here */
+
+/* Footer starts here */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0px;
+    color: black; /* Adjust text color */
+    z-index: -1;
+}
+
+/* Footer ends here  */
+
+.namenimg{
+    margin-top: 22px;
+    width: 33%;
+}
+
+.mainhr{
+    margin: auto;
+    width: 95%;
+}
+
+/* Design for the seven day container starts */
+
+/* main container */
+.sevencontainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    width: 98%;
+    position: relative;
+    color: white;
+    z-index: 2;
+}
+
+/* main-box for seven days */
+.sevenbox {
+    margin: 5px;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    flex: 1;
+    transition: flex 0.5s;
+    /* border: solid white 1px; */
+    background-color: rgba(230, 230, 230, 0.1)
+
+}
+
+/* information div */
+.info {
+    flex: 1;
+}
+
+.sevenimg {
+    width: 4rem;
+}
+
+.seventemp {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.sevendays {
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.sevenbox:hover {
+    /* box-shadow: 0 0 7px white; */
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: scale(1.05);
+    flex: 2;
+}
+
+.seven-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.seven-card-box {
+    /* flex: 0; */
+    display: none;
+    /* position: absolute; */
+    left: 10%;
+    transform: translateX(15%);
+    transition: flex 0.5s;
+}
+.seven-card-box hr {
+    width: 50%; /* Adjust the width as needed */
+    border: none;
+    border-top: 1px solid white; /* Specify the border style */
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.sevenbox:hover .seven-card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+    flex: 3;
+}
+/* .sevenbox:hover .seven-card-box {
+    display: flex;
+    flex: 1
+} */
+
+.sevencontainerbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 95%    
+}
+
+
+/* Design for the seven day container ends */
